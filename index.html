@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT-like Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Chat App</h1>
+            </div>
+            <button class="new-chat-btn" id="newChatBtn">
+                <span>+ New Chat</span>
+            </button>
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history will be populated here -->
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to ChatBot</h2>
+                    <p>Start a conversation by typing your message below</p>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <form class="message-form" id="messageForm">
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    />
+                    <button type="submit" class="send-btn">
+                        <span>Send</span>
+                    </button>
+                </form>
+                <p class="disclaimer">This is a demo chat application. Responses are powered by AI API.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
